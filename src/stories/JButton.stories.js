@@ -3,15 +3,15 @@ import Button from '../components/Button/Button';
 
 // This default export determines where you story goes in the story list
 export default {
-  title: 'Jim\'s Button',
+  title: 'Components/Button',
   component: Button,
+  argTypes: { onClick: { action: 'Clicked.' } }
 };
 
 const Template = (args) => <Button {...args} />;
 
-export const FirstStory = Template.bind({});
+export const Default = Template.bind({});
 
-FirstStory.args = {
-  /* the args you need here will depend on your component */
+Default.args = {
+  label: 'Default'
 };
-
