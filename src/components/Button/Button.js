@@ -1,9 +1,11 @@
 import React from 'react';
+import './Button.css';
 
 function Button(props) {
+  const label = props.label || props.children;
   return (
-    <button>Click Me</button>
+    <button onClick={props.onClick} >{label}</button>
   );
 }
 
-export default Button;
+export default Button; 
