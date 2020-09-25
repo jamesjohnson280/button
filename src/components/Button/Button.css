@@ -41,6 +41,18 @@
   outline: none;
 }
 
+.btn:disabled {
+  background-color: #e0e0e0;
+  border: none;
+  box-shadow: none;
+  color: #9e9e9e;
+  cursor: default;
+}
+
+.btn--disableshadow {
+  box-shadow: none;
+}
+
 /*
  * *** Outline Button ***
  */

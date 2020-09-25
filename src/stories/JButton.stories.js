@@ -21,7 +21,9 @@ const Template = (args) => <Button {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   label: 'Default',
-  variant: 'default'
+  variant: 'default',
+  disableShadow: false,
+  disabled: false
 };
 
 export const Outline = Template.bind({});
