@@ -3,8 +3,12 @@ import './Button.css';
 
 function Button(props) {
   const label = props.label || props.children
+  let styles = '';
+  if (props.variant) {
+    styles = `btn-${props.variant}`;
+  }
   return (
-    <button onClick={props.onClick} >{label}</button>
+    <button onClick={props.onClick} className={styles}>{label}</button>
   );
 }
 

@@ -11,7 +11,12 @@ export default {
 const Template = (args) => <Button {...args} />;
 
 export const Default = Template.bind({});
-
 Default.args = {
   label: 'Default'
+};
+
+export const Outline = Template.bind({});
+Outline.args = {
+  label: 'Outline',
+  variant: 'outline'
 };

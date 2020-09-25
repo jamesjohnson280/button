@@ -22,12 +22,28 @@ button {
 }
 
 /* State skins */
-button:active
+button:active,
 button:hover {
   background-color: #aeaeae;
 }
 
 button:focus {
-  border: 1.5px #000 solid; 
+  border: 1.5px solid #000; 
   outline: none;
+}
+
+/*
+ * *** Outline Button ***
+ */
+
+ .btn-outline {
+  background-color: transparent;
+  border: 1px solid #3d5afe;
+  box-shadow: none;
+  color: #3d5afe;
+ }
+
+ .btn-outline:active,
+ .btn-outline:hover {
+  background-color: rgba(61, 90, 254, .2);
 }
