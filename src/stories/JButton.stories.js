@@ -20,3 +20,9 @@ Outline.args = {
   label: 'Outline',
   variant: 'outline'
 };
+
+export const Text = Template.bind({});
+Text.args = {
+  label: 'Text',
+  variant: 'text'
+};
