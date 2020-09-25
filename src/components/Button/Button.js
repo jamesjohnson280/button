@@ -3,9 +3,9 @@ import './Button.css';
 
 function Button(props) {
   const label = props.label || props.children
-  let styles = '';
+  let styles = 'btn';
   if (props.variant) {
-    styles = `btn-${props.variant}`;
+    styles = `${styles} btn--${props.variant}`;
   }
   return (
     <button onClick={props.onClick} className={styles}>{label}</button>
