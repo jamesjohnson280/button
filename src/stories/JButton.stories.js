@@ -22,18 +22,20 @@ export const Default = Template.bind({});
 Default.args = {
   label: 'Default',
   variant: 'default',
-  disableShadow: false,
-  disabled: false
+  disabled: false,
+  disableShadow: false
 };
 
 export const Outline = Template.bind({});
 Outline.args = {
+  ...Default.args,
   label: 'Outline',
   variant: 'outline'
 };
 
 export const Text = Template.bind({});
 Text.args = {
+  ...Default.args,
   label: 'Text',
   variant: 'text'
 };
