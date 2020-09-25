@@ -5,14 +5,23 @@ import Button from '../components/Button/Button';
 export default {
   title: 'Components/Button',
   component: Button,
-  argTypes: { onClick: { action: 'Clicked.' } }
+  argTypes: { 
+    onClick: { action: 'Clicked.' },
+    variant: {
+      control: {
+        type: 'select',
+        options: ['default', 'outline', 'text']
+      }
+    } 
+  }
 };
 
 const Template = (args) => <Button {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  label: 'Default'
+  label: 'Default',
+  variant: 'default'
 };
 
 export const Outline = Template.bind({});
