@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
+:root {
+  --color-text: #3f3f3f;
+  --color-bg: #e0e0e0;
+  --color-bg-hover: #aeaeae; 
+  --color-bg-transparent: #aeaeae33; 
+  --color-border: var(--color-text);
+}
+
 /* 
  * *** Default Button ***
  */
@@ -9,27 +17,40 @@
   padding: .5rem 1rem;
 
   /* Typography */
-  color: #3f3f3f;
+  color: var(--color-text); 
   font-family: 'Noto Sans', sans-serif;
   font-size: 0.875rem;
   line-height: 1.5;
 
   /* Skin */
-  background-color: #e0e0e0;
+  background-color: var(--color-bg);
   border: none;
   border-radius: 6px;
   box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+  cursor: pointer;
 }
 
 /* State skins */
 .btn:active,
 .btn:hover {
-  background-color: #aeaeae;
+  background-color: var(--color-bg-hover);
 }
 
 .btn:focus {
   border: 1.5px solid #000; 
   outline: none;
+}
+
+.btn:disabled {
+  background-color: #e0e0e0;
+  border: none;
+  box-shadow: none;
+  color: #9e9e9e;
+  cursor: default;
+}
+
+.btn--disableshadow {
+  box-shadow: none;
 }
 
 /*
@@ -38,12 +59,26 @@
 
  .btn--outline {
   background-color: transparent;
-  border: 1px solid #3d5afe;
+  border: 1px solid var(--color-border);
   box-shadow: none;
-  color: #3d5afe;
  }
 
  .btn--outline:active,
  .btn--outline:hover {
-  background-color: rgba(61, 90, 254, .2);
+  background-color: var(--color-bg-transparent);
+}
+
+/*
+ * *** Text Button ***
+ */
+
+ .btn--text {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+ }
+
+ .btn--text:active,
+ .btn--text:hover {
+  background-color: var(--color-bg-transparent);
 }
