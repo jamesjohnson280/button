@@ -14,6 +14,8 @@
 
 .btn {
   /* Layout */
+  align-items: center;
+  display: flex;
   padding: .5rem 1rem;
 
   /* Typography */
@@ -28,6 +30,7 @@
   border-radius: 6px;
   box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
   cursor: pointer;
+  fill: var(--color-text);
 }
 
 /* State skins */
@@ -47,6 +50,7 @@
   box-shadow: none;
   color: #9e9e9e;
   cursor: default;
+  fill: #9e9e9e;
 }
 
 .btn--disableshadow {
