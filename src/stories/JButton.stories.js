@@ -12,6 +12,12 @@ export default {
         type: 'select',
         options: ['default', 'outline', 'text']
       }
+    },
+    startIcon: {
+      control: {
+        type: 'select',
+        options: ['none', 'add-cart']
+      }
     } 
   }
 };
@@ -22,6 +28,7 @@ export const Default = Template.bind({});
 Default.args = {
   label: 'Default',
   variant: 'default',
+  startIcon: 'none',
   disabled: false,
   disableShadow: false
 };

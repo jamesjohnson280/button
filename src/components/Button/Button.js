@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from '../Icon/Icon';
 import './Button.css';
 
 const Button = (props) => {
@@ -7,7 +8,10 @@ const Button = (props) => {
   let classes = props.variant ? `btn btn--${props.variant}` : 'btn';
   if (props.disableShadow) { classes = `${classes} btn--disableshadow`; }
   return (
-    <button onClick={props.onClick} className={classes} disabled={props.disabled} >{label}</button>
+    <button onClick={props.onClick} className={classes} disabled={props.disabled} >
+      {props.startIcon ? <Icon name={props.startIcon} /> : ''}
+      {label}
+    </button>
   );
 }
 
