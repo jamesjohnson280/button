@@ -30,7 +30,13 @@ export default {
         type: 'select',
         options: ['default', 'sm', 'md', 'lg']
       }
-    } 
+    },
+    color: {
+      control: {
+        type: 'select',
+        options: ['default', 'primary', 'secondary', 'danger']
+      }
+    }  
   }
 };
 
@@ -41,6 +47,7 @@ Default.args = {
   label: 'Default',
   variant: 'default',
   size: 'default',
+  color: 'default',
   startIcon: 'none',
   endIcon: 'none',
   disabled: false,

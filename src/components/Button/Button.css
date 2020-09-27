@@ -102,3 +102,46 @@
  .btn--lg {
    padding: .6875rem 1.375rem;
  }
+
+ /*
+  * *** Button Colors ***
+  */
+
+  .btn--primary {
+    --color-text: #fff;
+    --color-bg: #2962ff;
+    --color-bg-hover: #0039cb; 
+    --color-bg-transparent: #2962ff33; 
+    --color-border: var(--color-bg);
+  }
+
+  .btn--outline.btn--primary,
+  .btn--text.btn--primary {
+    --color-text: #2962ff;
+  }
+
+  .btn--secondary {
+    --color-text: #fff;
+    --color-bg: #455a64;
+    --color-bg-hover: #1c313a; 
+    --color-bg-transparent: #455a6433; 
+    --color-border: var(--color-bg);
+  }
+
+  .btn--outline.btn--secondary,
+  .btn--text.btn--secondary {
+    --color-text: #455a64;
+  }
+
+  .btn--danger {
+    --color-text: #fff;
+    --color-bg: #d32f2f;
+    --color-bg-hover: #9a0007; 
+    --color-bg-transparent: #d32f2f33; 
+    --color-border: var(--color-bg);
+  }
+
+  .btn--outline.btn--danger,
+  .btn--text.btn--danger {
+    --color-text: #d32f2f;
+  }
