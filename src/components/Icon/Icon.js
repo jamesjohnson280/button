@@ -1,5 +1,6 @@
 import React from 'react';
 import {ReactComponent  as IconAddCart} from './assets/add-cart.svg';
+import './Icon.css';
 
 const Icon = (props) => {
     let icon = undefined;
