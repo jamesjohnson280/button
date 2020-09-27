@@ -16,7 +16,7 @@ export default {
     startIcon: {
       control: {
         type: 'select',
-        options: ['none', 'add-cart']
+        options: ['none', 'add-cart', 'anchor', 'check', 'download', 'search']
       }
     } 
   }
