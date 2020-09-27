@@ -86,3 +86,19 @@
  .btn--text:hover {
   background-color: var(--color-bg-transparent);
 }
+
+/*
+ * *** Button Sizes ***
+ */
+
+ .btn--sm {
+   padding: .375rem 0.75rem;
+ }
+
+ .btn--md {
+   padding: .5rem 1rem;
+ }
+
+ .btn--lg {
+   padding: .6875rem 1.375rem;
+ }

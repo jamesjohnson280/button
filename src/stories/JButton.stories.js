@@ -24,6 +24,12 @@ export default {
         type: 'select',
         options: ['none', 'add-cart', 'anchor', 'check', 'download', 'search']
       }
+    },
+    size: {
+      control: {
+        type: 'select',
+        options: ['default', 'sm', 'md', 'lg']
+      }
     } 
   }
 };
@@ -34,6 +40,7 @@ export const Default = Template.bind({});
 Default.args = {
   label: 'Default',
   variant: 'default',
+  size: 'default',
   startIcon: 'none',
   endIcon: 'none',
   disabled: false,
