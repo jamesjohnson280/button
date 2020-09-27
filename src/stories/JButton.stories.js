@@ -18,6 +18,12 @@ export default {
         type: 'select',
         options: ['none', 'add-cart', 'anchor', 'check', 'download', 'search']
       }
+    },
+    endIcon: {
+      control: {
+        type: 'select',
+        options: ['none', 'add-cart', 'anchor', 'check', 'download', 'search']
+      }
     } 
   }
 };
@@ -29,6 +35,7 @@ Default.args = {
   label: 'Default',
   variant: 'default',
   startIcon: 'none',
+  endIcon: 'none',
   disabled: false,
   disableShadow: false
 };

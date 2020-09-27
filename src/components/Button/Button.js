@@ -11,6 +11,7 @@ const Button = (props) => {
     <button onClick={props.onClick} className={classes} disabled={props.disabled} >
       {props.startIcon ? <Icon name={props.startIcon} /> : ''}
       {label}
+      {props.endIcon ? <Icon name={props.endIcon} align='right' /> : ''}
     </button>
   );
 }
